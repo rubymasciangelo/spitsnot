@@ -131,7 +131,7 @@
 
 @keyframes drop2 {
     0% {
-      bottom: 90px;
+      bottom: 18px;
       opacity: 1;
     }
     
@@ -202,9 +202,10 @@
   }
   
   .drop1-2 {
-    width: 60px;
+    width: 40px;
     height: 10px;
-    bottom: 90px;
+    bottom: 18px;
+    left: 15px;
     border-radius: 0;
   }
   
@@ -212,11 +213,15 @@
     animation: drop2 1.3s cubic-bezier(1,.19,.66,.12) .5s infinite;
   }
 
+
+
+
+/*adadadad*/
 .video {
     position: absolute;
     z-index: 5;
-    top: 450px;
-    left: 530px;
+    top: 280px;
+    left: 280px;
 }
 
 .rbox img {
@@ -226,7 +231,7 @@
   position: absolute;
   transition: opacity 0s;
   opacity: 0;
-  width: 250px;
+  width: 700px;
   height: auto;
 }
 
@@ -237,5 +242,5 @@
 
 .rbox img:last-child {
   z-index: 1;
-  opacity: 1;
+  opacity: 0;
 }

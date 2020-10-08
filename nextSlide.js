@@ -5,9 +5,9 @@ function nextSlide() {
 
 setInterval(nextSlide, 150)
 
-function nextSlide() {
+function rnextSlide() {
     var q = function (sel) { return document.querySelector(sel); };
     q(".rbox").appendChild(q(".rbox img:first-child"));
 }
 
-setInterval(nextSlide, 800)
+setInterval(rnextSlide, 500)
