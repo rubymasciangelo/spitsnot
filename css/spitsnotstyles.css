@@ -3,6 +3,7 @@
     background-size: contain;
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
 
 @keyframes fade-in {
@@ -16,7 +17,7 @@
   
   @keyframes drop {
     0% {
-      bottom: 0px;
+      bottom: 15px;
       opacity: 1;
     }
     
@@ -26,7 +27,7 @@
     
     100% {
       opacity: 1;
-      bottom: -200px;
+      bottom: -400px;
     }
   }
   
@@ -44,12 +45,13 @@
   
   body {
     background-color: #e0e0e0;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .loader {
     width: 120px;
     height: 120px;
-    position: fixed;
+    position: absolute;
     margin: auto;
     left: 0;
     right: 0;
@@ -103,9 +105,9 @@
   }
   
   .drop1 {
-    width: 90px;
-    height: 16px;
-    bottom: 2px;
+    width: 60px;
+    height: 10px;
+    bottom: 15px;
     border-radius: 0;
   }
   
@@ -123,10 +125,13 @@
     background-size: contain;
     width: 100vw;
     height: 100vh;
+    position: relative;
+    top: -2px;
 }
-  @keyframes drop2 {
+
+@keyframes drop2 {
     0% {
-      bottom: -200px;
+      bottom: 90px;
       opacity: 1;
     }
     
@@ -136,14 +141,14 @@
     
     100% {
       opacity: 1;
-      bottom: 0px;
+      bottom: 400px;
     }
   }
-  
+
   .loader2 {
     width: 120px;
     height: 120px;
-    position: fixed;
+    position: absolute;
     margin: auto;
     left: 0;
     right: 0;
@@ -197,12 +202,25 @@
   }
   
   .drop1-2 {
-    width: 90px;
-    height: 16px;
-    bottom: -200px;
+    width: 60px;
+    height: 10px;
+    bottom: 90px;
     border-radius: 0;
   }
   
   .drop2-2 {
     animation: drop2 1.3s cubic-bezier(1,.19,.66,.12) .5s infinite;
   }
+
+.video {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.795);
+    color: cornflowerblue;
+    width: 400px;
+    height: 200px;
+    z-index: 5;
+    top: 500px;
+    left: 450px;
+    text-align: center;
+    line-height: 150px;
+}
