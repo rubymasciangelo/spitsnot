@@ -244,3 +244,23 @@
   z-index: 1;
   opacity: 0;
 }
+
+.spit, .snot {
+  height: auto;
+  width: 100px;
+  position: absolute;
+}
+
+.spitbox {
+  position: absolute;
+  top: 270px;
+  right: 545px;
+  z-index: 10;
+}
+
+.snotbox {
+  position: absolute;
+  bottom: -240px;
+  left: 500px;
+  z-index: 10;
+}
