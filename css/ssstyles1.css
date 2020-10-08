@@ -1,0 +1,41 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.bbbg {
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+
+.bbbox img {
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    transition: opacity 0s;
+    opacity: 0;
+    width: auto;
+    height: 100vh;
+}
+
+.bbbox img:first-child {
+    z-index: 2;
+    opacity: 1;
+}
+
+.bbbox img:last-child {
+    z-index: 1;
+    opacity: 1;
+}
