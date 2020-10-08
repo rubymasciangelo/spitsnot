@@ -214,13 +214,28 @@
 
 .video {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.795);
-    color: cornflowerblue;
-    width: 400px;
-    height: 200px;
     z-index: 5;
-    top: 500px;
-    left: 450px;
-    text-align: center;
-    line-height: 150px;
+    top: 450px;
+    left: 530px;
+}
+
+.rbox img {
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  transition: opacity 0s;
+  opacity: 0;
+  width: 250px;
+  height: auto;
+}
+
+.rbox img:first-child {
+  z-index: 2;
+  opacity: 1;
+}
+
+.rbox img:last-child {
+  z-index: 1;
+  opacity: 1;
 }
