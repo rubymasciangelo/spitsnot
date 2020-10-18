@@ -19,3 +19,10 @@ function lnextSlide() {
 }
 
 setInterval(lnextSlide, 500)
+
+function logonextSlide() {
+    var q = function (sel) { return document.querySelector(sel); };
+    q(".logobox").appendChild(q(".logobox img:first-child"));
+}
+
+setInterval(logonextSlide, 100)
