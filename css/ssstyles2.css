@@ -335,3 +335,8 @@ body {
    z-index: 1;
    opacity: 0;
  }
+
+ .mbbox {
+    left: 600px;
+    position: absolute;
+ }
