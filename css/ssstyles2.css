@@ -315,7 +315,7 @@ body {
    }
 }
 
-.logobox img {
+.logobox img, .mbbox img {
    top: 0;
    left: 0;
    display: block;
@@ -326,12 +326,12 @@ body {
    height: auto;
  }
  
- .logobox img:first-child {
+ .logobox img:first-child, .mbbox img:first-child {
    z-index: 2;
    opacity: 1;
  }
  
- .logobox img:last-child {
+ .logobox img:last-child, .mbbox img:last-child {
    z-index: 1;
    opacity: 0;
  }

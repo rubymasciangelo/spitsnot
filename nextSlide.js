@@ -26,3 +26,10 @@ function logonextSlide() {
 }
 
 setInterval(logonextSlide, 100)
+
+function mbnextSlide() {
+    var q = function (sel) { return document.querySelector(sel); };
+    q(".mbbox").appendChild(q(".mbbox img:first-child"));
+}
+
+setInterval(mbnextSlide, 100)
