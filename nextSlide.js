@@ -11,3 +11,11 @@ function rnextSlide() {
 }
 
 setInterval(rnextSlide, 500)
+
+
+function lnextSlide() {
+    var q = function (sel) { return document.querySelector(sel); };
+    q(".lbox").appendChild(q(".lbox img:first-child"));
+}
+
+setInterval(lnextSlide, 500)
