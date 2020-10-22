@@ -360,7 +360,8 @@ body {
  }
 
  .logo2box {
-     left: 300px;
+     left: 375px;
+     top: 100px;
      position: absolute;
  }
 
@@ -385,6 +386,13 @@ body {
  0%, 100% { transform: translateY(100%); }
  50% { transform: translateY(0%); }
  75% { transform: translateY(145%); }
+}
+
+.ocrloader {
+    background: url(./mb.png) center center no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
 }
 
 
