@@ -27,6 +27,13 @@ function logonextSlide() {
 
 setInterval(logonextSlide, 100)
 
+function logo2nextSlide() {
+    var q = function (sel) { return document.querySelector(sel); };
+    q(".logo2box").appendChild(q(".logo2box img:first-child"));
+}
+
+setInterval(logo2nextSlide, 100)
+
 function mbnextSlide() {
     var q = function (sel) { return document.querySelector(sel); };
     q(".mbbox").appendChild(q(".mbbox img:first-child"));

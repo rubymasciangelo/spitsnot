@@ -337,7 +337,7 @@ body {
    }
 }
 
-.logobox img, .mbbox img {
+.logobox img, .logo2box img, .mbbox img {
    top: 0;
    left: 0;
    display: block;
@@ -348,15 +348,20 @@ body {
    height: auto;
  }
 
- .logobox img:first-child, .mbbox img:first-child {
+ .logobox img:first-child, .logo2box img:first-child, .mbbox img:first-child {
    z-index: 2;
    opacity: 1;
    /* opacity: .25; */
  }
 
- .logobox img:last-child, .mbbox img:last-child {
+ .logobox img:last-child, .logo2box img:last-child, .mbbox img:last-child {
    z-index: 1;
    opacity: 0;
+ }
+
+ .logo2box {
+     left: 300px;
+     position: absolute;
  }
 
  .mbbox {
