@@ -396,12 +396,12 @@ body {
  75% { transform: translateY(145%); }
 }
 
-/* .ocrloader {
+.ocrloader {
     background: url(./mb.png) center center no-repeat;
     background-size: contain;
     height: 100vh;
     width: 100vw;
-} */
+}
 
 
 
