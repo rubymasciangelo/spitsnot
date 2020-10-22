@@ -344,9 +344,10 @@ body {
    position: absolute;
    transition: opacity 0s;
    opacity: 0;
-   width: 300px;
+   width: 1000px;
    height: auto;
  }
+
 
  .logobox img:first-child, .logo2box img:first-child, .mbbox img:first-child {
    z-index: 2;
@@ -360,10 +361,17 @@ body {
  }
 
  .logo2box {
-     left: 475px;
-     top: 200px;
+     left: 175px;
+     top: -100px;
      position: absolute;
  }
+
+ img.smol{
+    width: 300px !important;
+    top: 300px;
+    left: 300px;
+}
+
 
  .mbbox {
     left: 600px;
