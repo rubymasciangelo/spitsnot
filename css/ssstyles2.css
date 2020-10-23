@@ -337,15 +337,29 @@ body {
    }
 }
 
+
+
+.logo2box {
+    left: 600px;
+    top: 200px;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .logobox img, .logo2box img, .mbbox img {
-   top: 0;
-   left: 0;
+   /* top: 0;
+   left: 0; */
    display: block;
    position: absolute;
    transition: opacity 0s;
    opacity: 0;
-   width: 1000px;
-   height: auto;
+   width: auto;
+   height: 200px;
+   margin: auto;
  }
 
 
@@ -360,21 +374,12 @@ body {
    opacity: 0;
  }
 
- .logo2box {
-     left: 175px;
-     top: -100px;
-     position: absolute;
- }
 
- img.smol{
-    width: 300px !important;
-    top: 400px;
-    left: 300px;
-}
 
 
  .mbbox {
     left: 600px;
+    top: 200px;
     position: absolute;
  }
 
@@ -396,12 +401,12 @@ body {
  75% { transform: translateY(145%); }
 }
 
-.ocrloader {
+/* .ocrloader {
     background: url(./mb.png) center center no-repeat;
     background-size: contain;
     height: 100vh;
     width: 100vw;
-}
+} */
 
 
 
