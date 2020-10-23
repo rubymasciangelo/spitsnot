@@ -32,7 +32,7 @@ function logo2nextSlide() {
     q(".logo2box").appendChild(q(".logo2box img:first-child"));
 }
 
-setInterval(logo2nextSlide, 100)
+setInterval(logo2nextSlide, 300)
 
 function mbnextSlide() {
     var q = function (sel) { return document.querySelector(sel); };
