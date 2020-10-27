@@ -21,11 +21,11 @@ body {
 }
 
 body {
-    --color-text: #fff;
+    --color-text: rgb(93, 94, 94);
     --color-bg: #000;
-    --color-link: #555;
-    --color-link-hover: #98fadf;
-    --color-info: #f7cfb9;
+    --color-link: rgb(83, 92, 92);
+    --color-link-hover: #565e61;
+    --color-info: #8bb0bb5b;
     --glitch-width: 100vw;
     --glitch-height: 100vh;
     --gap-horizontal: 10px;
@@ -38,10 +38,10 @@ body {
     --blend-mode-4: none;
     --blend-mode-5: overlay;
     --blend-color-1: transparent;
-    --blend-color-2: rgba(125, 148, 142, 0);
+    --blend-color-2: #979da3;
     --blend-color-3: transparent;
     --blend-color-4: transparent;
-    --blend-color-5: #af4949;
+    --blend-color-5: #d3d7da;
  }
 
  .glitch
@@ -60,10 +60,10 @@ body {
     left: calc(-1 * var(--gap-horizontal));
     width: calc(100% + var(--gap-horizontal) * 2);
     height: calc(100% + var(--gap-vertical) * 2);
-    /* background: url(./egg.png) no-repeat 50% 0; */
-    background: url(./mb.png) no-repeat 50% 0;
+    /* background: url(./mb.png) no-repeat 50% 0; */
+    background: url(./Black.jpg) no-repeat 50% 0;
     background-color: var(--blend-color-1);
-    background-size: contain;
+    background-size: cover;
     transform: translate3d(0, 0, 0);
     background-blend-mode: var(--blend-mode-1);
     opacity: 1;

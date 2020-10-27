@@ -1,4 +1,4 @@
-.password-template {
+.bigbody {
     --color-text: #fff;
     --color-bg: #000;
     --color-link: #555;
@@ -20,6 +20,8 @@
     --blend-color-3: transparent;
     --blend-color-4: transparent;
     --blend-color-5: #af4949;
+	height:100px;
+	width: 100%;
  }
 
   .glitch

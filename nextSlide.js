@@ -1,24 +1,24 @@
-// function nextSlide() {
-//     var q = function (sel) { return document.querySelector(sel); };
-//     q(".bbbox").appendChild(q(".bbbox img:first-child"));
-// }
+function nextSlide() {
+    var q = function (sel) { return document.querySelector(sel); };
+    q(".bbbox").appendChild(q(".bbbox img:first-child"));
+}
 
-// setInterval(nextSlide, 150)
+setInterval(nextSlide, 150)
 
-// function rnextSlide() {
-//     var q = function (sel) { return document.querySelector(sel); };
-//     q(".rbox").appendChild(q(".rbox img:first-child"));
-// }
+function rnextSlide() {
+    var q = function (sel) { return document.querySelector(sel); };
+    q(".rbox").appendChild(q(".rbox img:first-child"));
+}
 
-// setInterval(rnextSlide, 500)
+setInterval(rnextSlide, 500)
 
 
-// function lnextSlide() {
-//     var q = function (sel) { return document.querySelector(sel); };
-//     q(".lbox").appendChild(q(".lbox img:first-child"));
-// }
+function lnextSlide() {
+    var q = function (sel) { return document.querySelector(sel); };
+    q(".lbox").appendChild(q(".lbox img:first-child"));
+}
 
-// setInterval(lnextSlide, 500)
+setInterval(lnextSlide, 500)
 
 function logonextSlide() {
     var q = function (sel) { return document.querySelector(sel); };
@@ -32,7 +32,7 @@ function logo2nextSlide() {
     q(".logo2box").appendChild(q(".logo2box img:first-child"));
 }
 
-setInterval(logo2nextSlide, 300)
+setInterval(logo2nextSlide, 100)
 
 function mbnextSlide() {
     var q = function (sel) { return document.querySelector(sel); };
