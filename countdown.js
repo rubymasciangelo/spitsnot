@@ -38,5 +38,6 @@ function getTimeRemaining(endtime) {
     const timeinterval = setInterval(updateClock, 1000);
   }
   
-  const deadline = 'October 31 2020';
+
+  const deadline = '2020 10 31 UTC-0700';
   initializeClock('clockdiv', deadline);

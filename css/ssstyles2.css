@@ -25,7 +25,7 @@ body {
     --color-bg: #000;
     --color-link: rgb(83, 92, 92);
     --color-link-hover: #565e61;
-    --color-info: #8bb0bb5b;
+    --color-info: #1c1c1d6e;
     --glitch-width: 100vw;
     --glitch-height: 100vh;
     --gap-horizontal: 10px;
@@ -44,31 +44,28 @@ body {
     --blend-color-5: #d3d7da;
  }
 
+.clockbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
  #clockdiv{
-    font-family: sans-serif;
+    font-family: 'VT323', monospace;
     color: #fff;
     display: inline-block;
     font-weight: 100;
     text-align: center;
     font-size: 30px;
-    position: absolute;
-    top: 200px;
-    left: 500px;
+    margin: auto;
 }
 
 #clockdiv > div{
-    padding: 10px;
-    border-radius: 3px;
-    background: #00BF96;
+    padding: 3px;
     display: inline-block;
 }
 
-#clockdiv div > span{
-    padding: 15px;
-    border-radius: 3px;
-    background: #00816A;
-    display: inline-block;
-}
+
 
  .glitch
 {
@@ -365,16 +362,21 @@ body {
 
 
 
-.logo2box {
-    left: 600px;
-    top: 200px;
-    position: absolute;
-
+.bigbigbox, .bigbigbox2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
+.bigbigbox2 {
+    position: absolute;
+    top: 500px;
+}
+
+.logo2box {
+    margin: auto;
+}
 
 .logobox img, .logo2box img, .mbbox img {
    /* top: 0;
@@ -384,10 +386,19 @@ body {
    transition: opacity 0s;
    opacity: 0;
    width: auto;
-   height: 200px;
+   height: 500px;
    margin: auto;
  }
 
+ .mbparallax {
+    display: block;
+    position: fixed;
+    left: 50px;
+    top: 300px ;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+ }
 
  .logobox img:first-child, .logo2box img:first-child, .mbbox img:first-child {
    z-index: 2;
@@ -404,13 +415,14 @@ body {
 
 
  .mbbox {
-    left: 600px;
+    /* left: 600px;
     top: 200px;
-    position: absolute;
+    position: absolute; */
+    margin: auto;
  }
 
-
-
+/* 
+OG BOUNCE
 .bounce {
    position: absolute;
    width: 100%;
@@ -425,7 +437,7 @@ body {
  0%, 100% { transform: translateY(100%); }
  50% { transform: translateY(0%); }
  75% { transform: translateY(145%); }
-}
+} */
 
 /* .ocrloader {
     background: url(./mb.png) center center no-repeat;
@@ -473,3 +485,150 @@ body {
 
  0-100 translateY used to be set to 135% can be used for bounce elsewhere
  */
+
+ .backhandbox {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+.backhand {
+    position: absolute;
+    top: 5px;
+    z-index: 10;
+}
+
+.hand {
+    position: absolute;
+}
+
+.high {
+    z-index: 20;
+    top: 30px;
+}
+
+.mid {
+    z-index: 30;
+    top: 50px;
+}
+
+.low {
+    z-index: 40;
+    top: 200px;
+}
+
+.hand2 {
+    left: 50px;
+}
+
+.hand3 {
+    left: 100px;
+}
+
+.hand4 {
+    left: 120px;
+}
+
+.hand5 {
+    left: 300px;
+}
+
+.hand6 {
+    left: 200px;
+}
+
+.hand7 {
+    left: 400px;
+}
+
+.hand8 {
+    left: 370px;
+}
+
+.hand9 {
+    left: 500px;
+}
+
+.hand11 {
+    right: 0px;
+}
+
+.hand12 {
+    right: 50px;
+}
+
+.hand13 {
+    right: 100px;
+}
+
+.hand14 {
+    right: 120px;
+}
+
+.hand15 {
+    right: 300px;
+}
+
+.hand16 {
+    right: 200px;
+}
+
+.hand17 {
+    right: 400px;
+}
+
+.hand18 {
+    right: 370px;
+}
+
+.hand19 {
+    right: 500px;
+}
+
+.hand2 img, .hand9 img, .hand12 img {
+    width: 200px;
+    height: auto;
+}
+
+.hand7 img, .hand17 img {
+    width: 250px;
+    height: auto;
+}
+
+.hand5 img, .hand15 img {
+    width: 175px;
+    height: auto;
+}
+
+.hand4 img, .hand14 img {
+    width: 500px;
+    height: auto;
+}
+
+img {
+    filter: invert();
+}
+
+.bounce1 {
+    transform: translateY(135%);
+    animation: move 5s cubic-bezier(0.15, 0.44, 0.76, 0.64);
+    animation-iteration-count: infinite;
+  }
+ 
+ @keyframes move {
+  0%, 100% { transform: translateY(100%); }
+  50% { transform: translateY(0%); }
+  75% { transform: translateY(145%); }
+ }
+
+ .bounce2 {
+    transform: translateY(135%);
+    animation: move2 3s cubic-bezier(0.15, 0.44, 0.76, 0.64);
+    animation-iteration-count: infinite;
+  }
+ 
+ @keyframes move2 {
+  0%, 100% { transform: translateY(100%); }
+  50% { transform: translateY(0%); }
+  75% { transform: translateY(145%); }
+ }
