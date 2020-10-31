@@ -1,0 +1,45 @@
+    <div class="featured-product__media-column">
+
+      {% unless section_onboarding %}
+        {%- unless product.media.size == 0 -%}
+          {% assign variant_media_ids = '' %}
+          <style>
+            #FeaturedProduct-{{ section.id }} .product-media__image--featured-product {
+              object-fit: {{ section.settings.media_size }};
+              font-family: "object-fit: {{ section.settings.media_size }}";
+              background-color: {{ section.settings.background_color }};
+            }
+          </style>
+
+          {%- unless product.has_only_default_variant -%}
+            {% for variant in product.variants %}
+
+              {% assign variant_media = variant.featured_media %}
+
+              {%- if variant_media -%}
+                {%- if variant_media_ids contains variant_media.id -%}
+                  {% continue %}
+                {%- endif -%}
+
+                {% assign variant_media_ids = variant_media_ids | append: variant_media.id | append: ' ' %}
+                {% assign featured = false %}
+                {%- if variant_media == featured_media -%}
+                  {% assign featured = true %}
+                {%- endif -%}
+
+                {% include 'media' with variant_media, parent_fit: section.settings.media_size, product_media_wrapper_data: 'data-variant-media-toggle-hide', data_image: 'data-variant-media-image', featured_media: featured, section_type: 'featured-product' %}
+
+              {%- endif -%}
+            {% endfor %}
+          {%- endunless -%}
+
+          {%- unless featured_media and variant_media_ids contains featured_media.id -%}
+            {% include 'media' with featured_media, parent_fit: section.settings.media_size, product_media_wrapper_data: 'data-variant-media-toggle-hide', data_image: 'data-variant-media-image', featured_media: true, section_type: 'featured-product' %}
+          {%- endunless -%}
+
+          {% include 'shopify-xr-button' %}
+        {%- endunless -%}
+      {% else %}
+        {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endunless %}
+    </div>
