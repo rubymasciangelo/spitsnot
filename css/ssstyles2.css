@@ -89,7 +89,7 @@ body {
     background-size: cover;
     transform: translate3d(0, 0, 0);
     background-blend-mode: var(--blend-mode-1);
-    opacity: 1;
+    opacity: 0;
  }
 
  /*.glitchit {
