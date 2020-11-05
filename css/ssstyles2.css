@@ -38,10 +38,10 @@ body {
     --blend-mode-4: none;
     --blend-mode-5: overlay;
     --blend-color-1: transparent;
-    --blend-color-2: #979da3;
+    --blend-color-2: #979da300;
     --blend-color-3: transparent;
     --blend-color-4: transparent;
-    --blend-color-5: #d3d7da;
+    --blend-color-5: #d3d7da33;
  }
 
 .clockbox {
@@ -84,7 +84,7 @@ body {
     width: calc(100% + var(--gap-horizontal) * 2);
     height: calc(100% + var(--gap-vertical) * 2);
     /* background: url(./mb.png) no-repeat 50% 0; */
-    background: url("./hands.gif") no-repeat 50% 0;
+    background: url("./barbedwire.PNG") no-repeat 50% 0;
     background-color: var(--blend-color-1);
     background-size: cover;
     transform: translate3d(0, 0, 0);
