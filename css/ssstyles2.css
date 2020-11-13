@@ -84,12 +84,12 @@ body {
     width: calc(100% + var(--gap-horizontal) * 2);
     height: calc(100% + var(--gap-vertical) * 2);
     /* background: url(./mb.png) no-repeat 50% 0; */
-    background: url("./barbedwire.PNG") no-repeat 50% 0;
+    background-image: linear-gradient(rgba(13, 13, 14, 0.603), rgba(13, 13, 14, 0)), url("./barbedwire.PNG");
     background-color: var(--blend-color-1);
     background-size: cover;
     transform: translate3d(0, 0, 0);
     background-blend-mode: var(--blend-mode-1);
-    opacity: 0;
+    opacity: 1;
  }
 
  /*.glitchit {
